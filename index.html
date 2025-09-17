@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For LY ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 0, 85, 0.85);
+      padding: 12px;
+      text-align: center;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 17px;
+      font-weight: bold;
+    }
+    nav a:hover { text-shadow: 0 0 10px #fff; }
+
+    /* Section styling */
+    section {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+    }
+
+    /* Floating hearts */
+    .heart {
+      position: absolute;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 24px;
+      animation: floatUp 8s linear infinite;
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(100vh); opacity: 1; }
+      100% { transform: translateY(-10vh); opacity: 0; }
+    }
+
+    /* Glowing Name */
+    h1 {
+      font-size: 4em;
+      text-shadow: 0 0 20px #ff0055, 0 0 40px #ff6699;
+      margin-bottom: 20px;
+    }
+
+    /* Gallery with cards */
+    .card-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1000px;
+    }
+    .card {
+      background: rgba(255,255,255,0.15);
+      border-radius: 15px;
+      padding: 10px;
+      width: 220px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: scale(1.05); }
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+    .card p {
+      margin: 10px 0 0;
+      font-size: 1.1em;
+      text-align: center;
+    }
+
+    /* Message */
+    .message {
+      max-width: 700px;
+      font-size: 1.3em;
+      line-height: 1.7em;
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    /* Music Player UI */
+    .music-player {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 0, 85, 0.9);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.5);
+      z-index: 1000;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    .music-player button {
+      background: white;
+      color: #ff0055;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 50%;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .music-player button:hover {
+      background: #ff6699;
+      color: white;
+    }
+    .music-player .song-title {
+      color: white;
+      font-weight: bold;
+      font-size: 1em;
+      margin-left: 15px;
+      flex-grow: 1;
+    }
+    .music-player input[type="range"] {
+      width: 150px;
+      margin-left: 15px;
+      cursor: pointer;
+      accent-color: #ff6699;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Hearts -->
+  <div class="hearts"></div>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#home">Trang chủ</a>
+    <a href="#gallery">Phòng trưng bày</a>
+    <a href="#message">Tin nhắn</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1>LY ❤️</h1>
+    <p style="font-size:1.4em;">Ánh nắng của tôi, hạnh phúc của tôi, mãi mãi của tôi 💕</p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h1>Kỷ niệm của chúng ta ❤️</h1>
+    <div class="card-gallery">
+      <div class="card">
+        <img src="https://via.placeholder.com/220x250/ff99aa/ffffff?text=LY+1" alt="LY">
+        <p>Nụ cười đẹp</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/220x250/ff6699/ffffff?text=LY+2" alt="LY">
+        <p>Khoảnh khắc ngọt ngào</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/220x250/ff3366/ffffff?text=LY+3" alt="LY">
+        <p>Thiên thần của tôi</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/220x250/ff0044/ffffff?text=LY+4" alt="LY">
+        <p>Tình yêu mãi mãi</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Message Section -->
+  <section id="message">
+    <h1>Tin nhắn của tôi 💌</h1>
+    <div class="message">
+      LY thân mến,<br><br>
+      Em là phần đẹp nhất trong cuộc đời anh.<br>
+      Không khoảng cách nào, kể cả Việt Nam, có thể ngăn cản tình yêu anh dành cho em.<br>
+      Em là trái tim, là tâm hồn, và là mãi mãi của anh. ❤️<br><br>
+      Mãi mãi thuộc về em,<br>
+      [Sachin.]
+    </div>
+  </section>
+
+  <!-- Music Player UI -->
+  <div class="music-player">
+    <button id="playPause">▶</button>
+    <span class="song-title">Bài hát yêu thích</span>
+    <input type="range" id="progress" value="0" min="0" max="100">
+  </div>
+
+  <audio id="audio" src="your-song.mp3" loop></audio>
+
+  <!-- Floating Hearts Script -->
+  <script>
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.innerHTML = "❤️";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.fontSize = (20 + Math.random() * 20) + "px";
+      heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+      document.body.appendChild(heart);
+      setTimeout(() => { heart.remove(); }, 8000);
+    }
+    setInterval(createHeart, 500);
+
+    // Music Player Controls
+    const audio = document.getElementById("audio");
+    const playBtn = document.getElementById("playPause");
+    const progress = document.getElementById("progress");
+
+    playBtn.addEventListener("click", () => {
+      if(audio.paused) {
+        audio.play();
+        playBtn.textContent = "⏸";
+      } else {
+        audio.pause();
+        playBtn.textContent = "▶";
+      }
+    });
+
+    audio.addEventListener("timeupdate", () => {
+      progress.value = (audio.currentTime / audio.duration) * 100;
+    });
+
+    progress.addEventListener("input", () => {
+      audio.currentTime = (progress.value / 100) * audio.duration;
+    });
+  </script>
+
+</body>
+</html>
